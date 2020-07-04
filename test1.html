@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Remove default bullets */
+ul, #myUL {
+  list-style-type: none;
+}
+
+/* Remove margins and padding from the parent ul */
+#myUL {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the caret/arrow */
+.caret {
+  cursor: pointer;
+  user-select: none; /* Prevent text selection */
+}
+
+/* Create the caret/arrow with a unicode, and style it */
+.caret::before {
+  content: "\25B6";
+  color: black;
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+.caret-down::before {
+  transform: rotate(90deg);
+}
+
+/* Hide the nested list */
+.nested {
+  display: none;
+}
+
+/* Show the nested list when the user clicks on the caret/arrow (with JavaScript) */
+.active {
+  display: block;
+}
+</style>
+<body>
+<h2>Semantic Search for PatentTransformer</h2>
+<ul id="myUL">
+<h3></h3> 
+(click &#9654; for showing results)
+<li><span class="caret">A thermal reactor having a plurality of elongated reactor bodies which are arranged parallel in a longitudinal direction and in a cross-sectional shape having a square top with a pair of side walls;
+</span>
+<ul class="nested">
+<li>[ rank ][ embedding-based similarity ][ word-based similarity ] [ patent number ][ patent field ][ patent text ]
+<li>[ 0 ][ 11.852642 ][ 44.28136 ][ 5902224 ][ A-0 ][ A gas separation centrifuge is provided with a housing having a top, a bottom and a plurality of joined side walls parallel to an axis and forming a predetermined regular polygon cross-sectional shape perpendicular to the axis. ]</li>
+<li>[ 1 ][ 11.793163 ][ 47.727573 ][ 7666240 ][ A-0 ][ A honeycomb filter includes a plurality of honeycomb fired bodies each having a longitudinal direction and a plurality of cells which are divided by cell walls and which extend in the longitudinal direction in substantially parallel with each other, each of the cells having one end sealed; ]</li>
+<li>[ 2 ][ 11.747821 ][ 50.250786 ][ 8776567 ][ C-1-1 ][ providing a parts material made of metal extending in a lengthwise direction and having a flat, hollow, closed cross-sectional shape, the cross-sectional shape having a pair of long sides which are parallel to each other; ]</li>
+<li>[ 3 ][ 11.739431 ][ 50.86884 ][ 5015437 ][ C-1-0 ][ In a reactor core for a gas-cooled reactor, which core is composed of a plurality of prismatic bodies of graphite, each body containing nuclear fuel and having a top wall, a bottom wall and a plurality of vertically extending side walls, and ]</li>
+<li>[ 4 ][ 11.675388 ][ 42.66945 ][ 4655019 ][ C-1-2 ][ a rectangular frame having a plurality of straight sectional members having a hollow rectangular cross-section, each of the sectional members having an inner wall which faces inside of the frame and in which two parallel grooves are formed which extend in the longitudinal direction of the sectional member and widen toward the interior of the groove, ]</li>
+<li>[ 5 ][ 11.660597 ][ 41.398342 ][ 5279082 ][ C-12-1 ][ a base element body having a substantially rhomboid longitudinal sectional shape and formed of two side walls intersecting one another along a longitudinal direction, each of said side walls extending between longitudinally space cut surfaces; and ]</li>
+<li>[ 6 ][ 11.618298 ][ 43.991222 ][ 5794402 ][ C-18-5 ][ a core including a plurality of adjacent elongated core members each having side walls and upper and lower walls connecting the side walls, which when viewed in cross-section define a polygonal shape, and ]</li>
+<li>[ 7 ][ 11.612957 ][ 43.151085 ][ 6108966 ][ C-1-1 ][ an elongated case having, a polygonal cross-sectional shape having a plurality of straight sides; ]</li>
+<li>[ 8 ][ 11.57122 ][ 48.44151 ][ 7666240 ][ C-1-1 ][ a plurality of honeycomb fired bodies each having a longitudinal direction and a plurality of cells which are divided by cell walls and which extend in the longitudinal direction in substantially parallel with each other, each of the cells having one end sealed; and ]</li>
+<li>[ 9 ][ 11.448851 ][ 44.416927 ][ 4779507 ][ C-12-2 ][ (1) a main body made up of a pair of wall plates arranged at a predetermined angle relative to one another while leaving a center slit elongated in the longitudinal direction of said sound block and a pair of side walls coupled to both longitudinal ends of said pair of wall plates, said pair of wall plates internally defining an elongated resonator chamber having a substantially triangular cross-sectional prifile; and ]</li>
+</ul></li>
+<li><span class="caret">each with a central axis which is perpendicular;
+</span>
+<ul class="nested">
+<li>[ rank ][ embedding-based similarity ][ word-based similarity ] [ patent number ][ patent field ][ patent text ]
+<li>[ 0 ][ 14.748508 ][ 21.034138 ][ 6782802 ][ C-34-4 ][ each of which has a central axis; ]</li>
+<li>[ 1 ][ 14.748508 ][ 21.034138 ][ 6782802 ][ C-16-4 ][ each of which has a central axis; ]</li>
+<li>[ 2 ][ 14.748508 ][ 21.034138 ][ 6782802 ][ C-40.0-4 ][ each of which has a central axis; ]</li>
+<li>[ 3 ][ 14.748508 ][ 21.034138 ][ 6782802 ][ C-30-4 ][ each of which has a central axis; ]</li>
+<li>[ 4 ][ 14.748508 ][ 21.034138 ][ 7520211 ][ C-11-4 ][ each of which has a central axis; ]</li>
+<li>[ 5 ][ 13.824716 ][ 22.519146 ][ 6117135 ][ C-16-2 ][ a central axis is defined perpendicular to said plane; ]</li>
+<li>[ 6 ][ 13.824716 ][ 22.519146 ][ 6117135 ][ C-13-2 ][ a central axis is defined perpendicular to said plane; ]</li>
+<li>[ 7 ][ 13.754602 ][ 21.65541 ][ 6237227 ][ C-1-2 ][ a central axis perpendicular to the plane, ]</li>
+<li>[ 8 ][ 13.65119 ][ 22.018047 ][ 4875756 ][ C-5-6 ][ which has a central axis which is coincident with said rotational axis; ]</li>
+<li>[ 9 ][ 13.63259 ][ 22.494658 ][ 5735309 ][ C-11-2 ][ a transverse axis perpendicular to the central axis; ]</li>
+</ul></li>
+<li><span class="caret">each side wall of each reactor body having a plurality of openings formed therein;
+</span>
+<ul class="nested">
+<li>[ rank ][ embedding-based similarity ][ word-based similarity ] [ patent number ][ patent field ][ patent text ]
+<li>[ 0 ][ 13.278229 ][ 30.343353 ][ 6109344 ][ C-11-4 ][ a side portion of each tank body having a plurality of cooling apertures therein; and ]</li>
+<li>[ 1 ][ 13.278229 ][ 30.343353 ][ 6109344 ][ C-1-4 ][ a side portion of each tank body having a plurality of cooling apertures therein; and ]</li>
+<li>[ 2 ][ 12.684985 ][ 31.36792 ][ 8066157 ][ C-1-13 ][ said bottom wall of said mounting ring member having a plurality of openings formed therein; ]</li>
+<li>[ 3 ][ 12.684985 ][ 31.36792 ][ 7841492 ][ C-1-11 ][ said bottom wall of said mounting ring member having a plurality of openings formed therein; ]</li>
+<li>[ 4 ][ 12.684985 ][ 31.36792 ][ 7832599 ][ C-1-11 ][ said bottom wall of said mounting ring member having a plurality of openings formed therein; ]</li>
+<li>[ 5 ][ 12.579949 ][ 28.429619 ][ 5540719 ][ C-9-2 ][ said top portion having a plurality of openings formed therein; ]</li>
+<li>[ 6 ][ 12.553391 ][ 30.309 ][ 4000688 ][ C-4-3 ][ each of panels having a plurality of elongated ventilation openings therein; ]</li>
+<li>[ 7 ][ 12.516246 ][ 33.51759 ][ 4971199 ][ C-1-9 ][ said back wall portion having a plurality of openings formed therein; ]</li>
+<li>[ 8 ][ 12.516246 ][ 33.51759 ][ 4971199 ][ C-6-11 ][ said back wall portion having a plurality of openings formed therein; ]</li>
+<li>[ 9 ][ 12.516246 ][ 33.51759 ][ 4971199 ][ C-14.0-9 ][ said back wall portion having a plurality of openings formed therein; ]</li>
+</ul></li>
+<li><span class="caret">the reactor bodies and reactor vessel defining a first chamber;
+</span>
+<ul class="nested">
+<li>[ rank ][ embedding-based similarity ][ word-based similarity ] [ patent number ][ patent field ][ patent text ]
+<li>[ 0 ][ 12.677845 ][ 33.210846 ][ 4251371 ][ C-2.0-1 ][ a reactor container defining a chamber; ]</li>
+<li>[ 1 ][ 12.633554 ][ 38.349194 ][ 4892684 ][ C-19-1 ][ a reactor vessel including wall members defining a reaction chamber; ]</li>
+<li>[ 2 ][ 12.609743 ][ 37.858173 ][ 10220363 ][ C-1-1 ][ a reactor vessel defining a confined reactor volume; ]</li>
+<li>[ 3 ][ 12.505815 ][ 36.27466 ][ 5160544 ][ C-16.0-1 ][ reactor wall means defining a reactor chamber; ]</li>
+<li>[ 4 ][ 12.505815 ][ 36.27466 ][ 5160544 ][ C-1-1 ][ reactor wall means defining a reactor chamber; ]</li>
+<li>[ 5 ][ 12.456807 ][ 37.15096 ][ 5102628 ][ C-5-14 ][ said reactor vessel having a cylindrical reactor chamber, ]</li>
+<li>[ 6 ][ 12.408283 ][ 37.512287 ][ 9212421 ][ C-10-1 ][ a reactor defining a reactor chamber; and ]</li>
+<li>[ 7 ][ 12.391346 ][ 36.08874 ][ 9707530 ][ C-1-2 ][ a reactor shell of the supersonic reactor for defining a reactor chamber; ]</li>
+<li>[ 8 ][ 12.391346 ][ 36.08874 ][ 10195574 ][ C-1-2 ][ a reactor shell of the supersonic reactor for defining a reactor chamber; ]</li>
+<li>[ 9 ][ 12.391346 ][ 36.08874 ][ 10160697 ][ C-1-2 ][ a reactor shell of the supersonic reactor for defining a reactor chamber; ]</li>
+</ul></li>
+<li><span class="caret">and heat exchange members each extending through a respective opening formed in an adjacent reactor body; the reactor bodies defining a second chamber.
+</span>
+<ul class="nested">
+<li>[ rank ][ embedding-based similarity ][ word-based similarity ] [ patent number ][ patent field ][ patent text ]
+<li>[ 0 ][ 11.104818 ][ 39.40576 ][ 7560081 ][ C-18-1 ][ the heating and reaction chambers being at least partially formed in a recess of the substrate, the reactor also comprising a heat exchanger for heat exchange between said heating and reaction channels, wherein each of the paired channels has an inner side-wall adjacent the other paired channel, and ]</li>
+<li>[ 1 ][ 10.889535 ][ 35.971416 ][ 6854457 ][ C-26.0-4 ][ a plurality of vertically spaced air outlet openings in a baking chamber wall, each opening aligned with a respective, adjacent axial fan, the openings in flow communication with the heat exchanger section; ]</li>
+<li>[ 2 ][ 10.682244 ][ 38.7124 ][ 4379435 ][ A-1 ][ The heat exchanger has heat exchange members defining flow passages extending axially and around the chamber and having an incoming passage interconnected with an outgoing passage by means of the drying chamber. ]</li>
+<li>[ 3 ][ 10.514082 ][ 37.99377 ][ 8365688 ][ A-2 ][ The fuel reforming reactor includes a heat-providing chamber in a heat exchange relationship with at least one reaction chamber. ]</li>
+<li>[ 4 ][ 10.486547 ][ 36.609787 ][ 4637365 ][ C-1-5 ][ (e) heat exchange members disposed in said chamber in fluid communication with said fluid jacket, each heat exchange member including a supply tube through which said coolant is conveyed and a plurality of spine-like heat exchanger surfaces extending radially from said supply tube, and ]</li>
+<li>[ 5 ][ 10.479824 ][ 36.146267 ][ 8956780 ][ C-1-6 ][ an oxygen-containing air channel is defined adjacent to each sheet body and between each sheet body and a respective one of the support members formed below the respective sheet bodies; and ]</li>
+<li>[ 6 ][ 10.477124 ][ 37.09394 ][ 4342721 ][ A-1 ][ A vertical cylindrical passage for each auxiliary heat exchanger extends through the reactor vault roof. ]</li>
+<li>[ 7 ][ 10.448572 ][ 35.95854 ][ 10062915 ][ C-7-1 ][ a second manifold connecting the cells of the stack to a second chamber integrated into the reactor body in a second exchange circuit, and ]</li>
+<li>[ 8 ][ 10.389865 ][ 40.050156 ][ 6779492 ][ C-18-0 ][ A reactor device as claimed in claim 1, wherein the reactor chamber has heat exchanging means forming panels of said chamber that comprise heat exchange tubes extending in said chamber from at least one wall thereof. ]</li>
+<li>[ 9 ][ 10.38398 ][ 37.43164 ][ 10364398 ][ C-93-0 ][ 93. The method according to claim 68 , comprising providing at least two second reactors in fluid communication with one common third reactor, each second reactor producing second reactor product gas. ]</li>
+</ul></li>
+
+</ul>  
+<script>
+var toggler = document.getElementsByClassName("caret");
+var i;
+
+for (i = 0; i < toggler.length; i++) {
+  toggler[i].addEventListener("click", function() {
+    this.parentElement.querySelector(".nested").classList.toggle("active");
+    this.classList.toggle("caret-down");
+  });
+}
+</script>
+</body>
+</html>
